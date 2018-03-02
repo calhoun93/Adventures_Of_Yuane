@@ -10,6 +10,7 @@ namespace adventures_of_Yuane
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Our first change!");
         }
     }
 }
