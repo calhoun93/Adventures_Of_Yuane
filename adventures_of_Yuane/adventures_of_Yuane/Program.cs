@@ -10,7 +10,23 @@ namespace adventures_of_Yuane
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Our first change!");
+            var player = new Character();
+
+            Console.WriteLine("What's your name?");
+            player.name = Console.ReadLine();
+            
+
+            Console.WriteLine("Character Name :" + player.name);
+            Console.WriteLine("Character Health :" + player.hp);
+            Console.WriteLine("Character Strength :" + player.str);
+
+            Console.ReadKey();
         }
+    }
+    public class Character
+    {
+        public string name;
+        public int hp;
+        public int str;
     }
 }
