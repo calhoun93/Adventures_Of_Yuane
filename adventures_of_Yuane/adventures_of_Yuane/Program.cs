@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,23 +11,19 @@ namespace adventures_of_Yuane
     {
         static void Main(string[] args)
         {
-            var player = new Character();
+            var player = new Player().Create();
 
-            Console.WriteLine("What's your name?");
-            player.name = Console.ReadLine();
+            var enemy = new Character {name = "Goblin Bully"};
             
-
-            Console.WriteLine("Character Name :" + player.name);
-            Console.WriteLine("Character Health :" + player.hp);
-            Console.WriteLine("Character Strength :" + player.str);
-
+            Console.WriteLine($"A {enemy.name} appeared!");
             Console.ReadKey();
         }
     }
     public class Character
     {
         public string name;
-        public int hp;
-        public int str;
+        public int Hp = 100;
+        public int Str = 10;
+        public int Def = 10;
     }
 }
