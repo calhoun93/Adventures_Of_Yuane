@@ -37,7 +37,7 @@ namespace adventures_of_Yuane
                         points -= spend;
                         break;
                     case "def":
-                        Str += spend;
+                        Def += spend;
                         points -= spend;
                         break;
                     case "cancel":

@@ -16,7 +16,8 @@ namespace adventures_of_Yuane
             var enemy = new Character {name = "Goblin Bully"};
             
             Console.WriteLine($"A {enemy.name} appeared!");
-            Console.ReadKey();
+            Combat.Battle(player, enemy);
+            Console.Write("End of program, press a key to exit");
         }
     }
     public class Character
