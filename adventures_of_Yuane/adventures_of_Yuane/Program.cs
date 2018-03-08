@@ -18,7 +18,6 @@ namespace adventures_of_Yuane
             Console.WriteLine($"A {enemy.name} appeared!");
             Combat.Battle(player, enemy);
             Console.Write("End of program, press a key to exit");
-            Console.ReadKey();
         }
     }
     public class Character
